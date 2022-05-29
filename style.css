@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.--col--1 {width: 8.33% ;}
+.--col--2 {width: 16.66% ;}
+.--col--3 {width: 25% ;}
+.--col--4 {width: 33.33% ;}
+.--col--5 {width: 41.66% ;}
+.--col--6 {width: 50% ;}
+.--col--7 {width: 58.33% ;}
+.--col--8 {width: 66.66% ;}
+.--col--9 {width: 75% ;}
+.--col--10 {width: 83.33% ;}
+.--col--11 {width: 91.66% ;}
+.--col--12 {width: 100% ;}
+
+.file-row {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+    background: rgba(165, 188, 248, 0.53);
+}
+
+[class*='--col--'] {
+    float: left;
+    padding: 10px;
+}
+
+.file-row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.file-icon {
+    background: transparent;
+    font-size: 30px;
+}
+.file-list {
+    margin-top: 1rem;
+    overflow-y: auto;
+    max-height: 300px;
+    text-align: center;
+}
+.check-icon {
+    background: transparent;
+    font-size: 16px;
+    padding-top: 4px;
+}
+.file-size {
+    font-size: 14px;
+    text-align: left;
+    padding-top: 1px;
+}
+.file-name {
+    font-size: 16px;
+    text-align: left;
+}
+.text-title {
+    margin-bottom: 6%;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.progress-bar-container {
+    width: 205px;
+    padding: 3px;
+    position: relative;
+    left: 20%;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+.progress-bar{
+    width: 0;
+    background: green;
+    height: 10px;
+    border-radius: 1rem;
+}
+
+.color-bluesky {
+    background: #04f8;
+}
+
+.text-normal {
+    font-size: 1.1rem;
+}
+.text-bluesky {
+    color: #04f8;
+}
+.box-container{
+    background: #FFFFFFED;
+    padding: 3%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+.drag-area{
+    border: 3px dashed #04f8;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    margin-left: -4%;
+    margin-right: -4%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.drag-area.active{
+    border: 2px solid #fff;
+}
+.drag-area .icon{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.drag-area header{
+    color: #fff;
+    margin-bottom: 5%
+}
+
+.drag-area span{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px 0 15px 0;
+}
+
+.drag-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
